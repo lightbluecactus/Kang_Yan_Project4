@@ -15,3 +15,34 @@ ul
 {
 	list-style-type: none;
 }
+
+#container
+{
+	margin: 0 auto;
+	max-width: 1140px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.box
+{
+	background-color: red;
+	padding: 20px;
+	height: 500px;
+	color: #fff;
+	text-align: center;
+	margin: 10px;
+	flex: 0 0 1;
+}
+
+.box1
+{
+	background-color: pink;
+}
+
+.box3,.box4
+{
+	display: none;
+}
+
