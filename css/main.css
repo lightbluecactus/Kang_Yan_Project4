@@ -19,21 +19,21 @@ ul
 #container
 {
 	margin: 0 auto;
-	max-width: 1140px;
+	min-width: 320px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; 
 	flex-wrap: wrap;
 }
 
 .box
 {
 	background-color: red;
-	padding: 20px;
+	padding: 10px;
 	height: 500px;
 	color: #fff;
 	text-align: center;
 	margin: 10px;
-	flex: 0 0 1;
+	flex: 0 0 auto;
 }
 
 .box1
@@ -44,5 +44,45 @@ ul
 .box3,.box4
 {
 	display: none;
+}
+
+@media screen and (min-width: 641px) {
+
+	#container
+	{
+		max-width: 1140px;
+		flex-direction: row;
+	}
+
+	.box
+	{
+		flex: 1 0 0;
+	}
+
+	.box3,.box4
+	{
+		display: block;
+	}
+
+	.box1
+	{
+		background-color: blue;
+	}
+
+	.box2
+	{
+		background-color: purple;
+	}
+
+	.box3
+	{
+		background-color: grey;
+	}
+
+	.box4
+	{
+		background-color: brown;
+	}
+
 }
 
